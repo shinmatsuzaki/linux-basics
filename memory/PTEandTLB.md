@@ -1,6 +1,6 @@
 # PageTableWalk and Page Fault
-本ページでは、Linuxにおける *PageTableEntry* 機構により発生する *Page Table Walk* と *Demand Paging* 機構による、  
-*Page Fault* の違いについて解説する。  
+本ページでは、Linuxにおける *PageTableEntry* 機構により発生する *Page Table Walk* と、  
+*Demand Paging* 機構による、*Page Fault* の違いについて解説する。  
 
 ### OSレイヤ
 1. Linuxでは、仮想メモリと物理メモリの２層のメモリ構成をしており、通常ユーザーランドから使用されるメモリアドレスは  
