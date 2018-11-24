@@ -7,7 +7,7 @@
 通常ユーザーランドから使用されるメモリアドレスは仮想アドレス（論理アドレス/logical adress)である.  
 仮想メモリは実際に必要になった時のみ物理アドレスに紐づけられる、 
 逆に言うと使われていない時は、物理アドレスに紐づけられないという性質を持つ.  
-これを  *Demand Paging* 機構と呼ぶ.    
+これを  *Demand Paging* 機構と呼ぶ<sup>[1](#footnote)</sup>.    
   
 2. 仮想メモリは *ページ(page)* という単位で管理される。↑において、実際に物理メモリと紐づけられた論理アドレスと物理アドレスとのマッピング表がカーネル内に存在する。これは、*ページテーブルエントリ(Page Table Entry/PTE)* と呼ばれる。  
 ※PTEはメモリ上に格納される  
@@ -30,6 +30,9 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
 - B-1:ページテーブルウオークの結果欲しいレコードがPTE上にあった →　結果をTLBに乗せて終わり  
 - B-2:ページテーブルウオークの結果欲しいレコードがPTE上にもなかった（ *page fault* )  
       ⇒　CPU(1)の話を背景に、仮想メモリと物理メモリの再度の紐づけを行いPTEを更新、PET更新に伴いCPU上のTLBも一度クリア 
+
+### 脚注
+<a name="footnote">1</a>: [4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)
 
 ### 参考文献
 - [０から作るOS開発　ページングその１　ページとPTEとPDE ](http://softwaretechnique.jp/OS_Development/kernel_development07.html)
