@@ -66,5 +66,6 @@ int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
 ```
 
 ### 参考文献
- - UNIXネットワークプログラミング, 1999, ピアソン・エデュケーション
- - 基礎からわかるTCP/IP ネットワーク実験プログラミング
+ - W.Richard Stevens, *UNIX NETWORK PROGRAMMING Volume1 Second Edition NetworkingAPI:Sockets and XTI* , 1998. 
+   篠田洋一 訳『UNIXネットワークプログラミング』ピアソン・エデュケーション, 1999.
+ - 村山公保『基礎からわかるTCP/IP ネットワーク実験プログラミング』オーム社, 2001.
