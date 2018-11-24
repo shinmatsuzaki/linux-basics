@@ -1,4 +1,4 @@
-# PageTableWalk and Page Fault
+# PageTableWalk と Page Fault の関係
 本ページでは、Linuxにおける *PageTableEntry* 機構により発生する *Page Table Walk* と、  
 *Demand Paging* 機構による、*Page Fault* の違いについて解説する.  
 
