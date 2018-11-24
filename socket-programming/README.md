@@ -16,3 +16,8 @@ int socket(int family, int type, int protocol)
 - AF_LOCAL : Unixドメインプロトコル
 - AF_ROUTE : 経路制御ソケット
 - AF_KEY   : キーソケット
+
+`type`では以下のいずれかのソケット型を指定する.  
+ - SOCKET_STREAM : ストリームソケット
+ - SOCKET_DGRAM  : データグラムソケット
+ - SOCK_RAW      : rawソケット
