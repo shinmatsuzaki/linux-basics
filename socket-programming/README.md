@@ -6,6 +6,7 @@
 ----|---- 
 |socket()|ソケットをopen|
 |close()|ソケットをclose|
+----|---- 
 |bind()|自ホストのIPaddr/Port番号の設定|
 |liseten()|コネクションの受付開始|
 |connect()|コネクション確立要求|
