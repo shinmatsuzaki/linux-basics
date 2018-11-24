@@ -3,6 +3,7 @@
 ### 主要な要学習事項
 #### system call
 |名称|説明|
+----|---- 
 |socket()|ソケットをopen|
 |close()|ソケットをclose|
 |bind()|自ホストのIPaddr/Port番号の設定|
