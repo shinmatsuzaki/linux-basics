@@ -28,7 +28,7 @@ int socket(int family, int type, int protocol)
 
 #### bind(2)とソケットアドレス構造体
 
-``C
+```C
 #include <sys/socket.h>
 
 int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
