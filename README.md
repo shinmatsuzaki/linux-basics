@@ -5,3 +5,4 @@ Linux / Linux Kernelの学習用レポジトリ
  - #### [Systemcall API](syscall)
  - #### [ソケットプラグミング](socket-programming)
  - #### [ファイルシステム](filesystem)
+ - #### [物理/仮想メモリ](filesystem)
