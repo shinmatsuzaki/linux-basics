@@ -10,7 +10,6 @@ C言語にてソケットを使用する際は、`socket`関数にてソケッ�
 #include <sys/socket.h>
 
 int socket(int family, int type, int protocol)
-
 ```
 `family`では以下のいずれかのプロトコルファミリを指定する.  
 - AF_INET  : IPv4プロトコル 
@@ -26,3 +25,11 @@ int socket(int family, int type, int protocol)
 
 `socket`関数は、成功するとソケットディスクリプタ(*socket descriptor*)あるいは*sockfd*と呼ばれる  
 非負整数を返す.  
+
+#### bind(2)とソケットアドレス構造体
+
+``C
+#include <sys/socket.h>
+
+int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
+```
