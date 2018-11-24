@@ -33,3 +33,7 @@ int socket(int family, int type, int protocol)
 
 int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
 ```
+
+### 参考文献
+ - UNIXネットワークプログラミング, 1999, ピアソン・エデュケーション
+ - 基礎からわかるTCP/IP ネットワーク実験プログラミング
