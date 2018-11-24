@@ -2,9 +2,9 @@
 
 ### Socket API
 
-#### socket システムコール
+#### socket(2)
 
-C言語にてソケットを使用する際は、`socket`システムコールにてソケットをオープンする。
+C言語にてソケットを使用する際は、`socket`関数にてソケットをオープンする。
 ```C
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -23,3 +23,6 @@ int socket(int family, int type, int protocol)
  - SOCKET_STREAM : ストリームソケット
  - SOCKET_DGRAM  : データグラムソケット
  - SOCK_RAW      : rawソケット
+
+`socket`関数は、成功するとソケットディスクリプタ(*socket descriptor*)あるいは*sockfd*と呼ばれる  
+非負整数を返す.  
