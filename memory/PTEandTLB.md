@@ -29,5 +29,8 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
 - B:欲しいページテーブルエントリがあったTLB上にない( *TLB MISS* ) → ページテーブルウオーク発生  
 - B-1:ページテーブルウオークの結果欲しいレコードがPTE上にあった →　結果をTLBに乗せて終わり  
 - B-2:ページテーブルウオークの結果欲しいレコードがPTE上にもなかった（ *page fault* )  
-      ⇒　CPU(1)の話を背景に、仮想メモリと物理メモリの再度の紐づけを行いPTEを更新、PET更新に伴いCPU上のTLBも一度クリア  
+      ⇒　CPU(1)の話を背景に、仮想メモリと物理メモリの再度の紐づけを行いPTEを更新、PET更新に伴いCPU上のTLBも一度クリア 
+
+### 参考文献
+- [０から作るOS開発　ページングその１　ページとPTEとPDE ](http://softwaretechnique.jp/OS_Development/kernel_development07.html)
 
