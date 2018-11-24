@@ -2,6 +2,8 @@
 
 ### Socket API
 
+#### `socket'システムコール
+
 C言語にてソケットを使用する際は、`socket`システムコールにてソケットをオープンする。
 ```C
 #include <sys/types.h>
