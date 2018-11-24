@@ -31,6 +31,18 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
 - B-2:ページテーブルウオークの結果欲しいレコードがPTE上にもなかった（ *page fault* )  
       ⇒　CPU(1)の話を背景に、仮想メモリと物理メモリの再度の紐づけを行いPTEを更新、PET更新に伴いCPU上のTLBも一度クリア 
 
+### TLBミスの発生状況の確認
+`perf`コマンドを使用することでTLBミスの発生状況の確認ができる。  
+
+```sh
+# perf stat -e dTLB-loads,dTLB-stores,iTLB-load-misses,iTLB-loads -I 1000
+#           time             counts unit events
+     1.001978040         27,398,445      dTLB-loads
+     1.001978040         14,215,811      dTLB-stores
+     1.001978040             54,771      iTLB-load-misses          #    0.06% of all iTLB cache hits
+     1.001978040         89,732,044      iTLB-loads
+```
+
 ### 脚注
 <a name="footnote">1</a>: [The Linux Kernel / 4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)
 
