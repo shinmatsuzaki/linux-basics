@@ -2,13 +2,13 @@
 
 ### 主要な要学習事項
 #### system call
-- socket() : ソケットをopen
-- close()  : ソケットをclose
-
-- bind():自ホストのIPaddr/Port番号の設定
-- liseten():コネクションの受付開始
-- connect():コネクション確立要求
-- accept():受け付けたコネクション用にソケットを作る
+|名称|説明|
+|socket()|ソケットをopen|
+|close()|ソケットをclose|
+|bind()|自ホストのIPaddr/Port番号の設定|
+|liseten()|コネクションの受付開始|
+|connect()|コネクション確立要求|
+|accept()|受け付けたコネクション用にソケットを作る|
 #### ソケットライブラリ関数
 #### 構造体
 
