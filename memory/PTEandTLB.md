@@ -32,7 +32,7 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
       ⇒　CPU(1)の話を背景に、仮想メモリと物理メモリの再度の紐づけを行いPTEを更新、PET更新に伴いCPU上のTLBも一度クリア 
 
 ### 脚注
-<a name="footnote">1</a>: [4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)
+<a name="footnote">1</a>: [The Linux Kernel / 4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)
 
 ### 参考文献
 - [０から作るOS開発　ページングその１　ページとPTEとPDE ](http://softwaretechnique.jp/OS_Development/kernel_development07.html)
