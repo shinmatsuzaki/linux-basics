@@ -33,6 +33,7 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
 
 ### TLBミスの発生状況の確認
 `perf`コマンドを使用することでTLBミスの発生状況の確認ができる。  
+※dTLBとiTLBの違いについては、WikipediaのTLBの記事を参照<sup>[2](#footnote)</sup>.  
 
 ```sh
 # perf stat -e dTLB-loads,dTLB-stores,iTLB-load-misses,iTLB-loads -I 1000
@@ -43,8 +44,10 @@ MMU内の *Translation Lookaside Buffer(TLB)* と呼ばれるキャッシュ機�
      1.001978040         89,732,044      iTLB-loads
 ```
 
+
 ### 脚注
-<a name="footnote">1</a>: [The Linux Kernel / 4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)
+<a name="footnote">1</a>: [The Linux Kernel / 4. メモリ管理](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)  
+<a name="footnote">2</a>: [Wikipedia / Translation lookaside buffer](http://archive.linux.or.jp/JF/JFdocs/The-Linux-Kernel-4.html)  
 
 ### 参考文献
 - [０から作るOS開発　ページングその１　ページとPTEとPDE ](http://softwaretechnique.jp/OS_Development/kernel_development07.html)
