@@ -65,6 +65,8 @@ int socket(int family, int type, int protocol)
 int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
 ```
 
+### listen(2)
+
 ### 参考文献
  - W.Richard Stevens, *UNIX NETWORK PROGRAMMING Volume1 Second Edition NetworkingAPI:Sockets and XTI* , 1998.   
    篠田洋一 訳『UNIXネットワークプログラミング』ピアソン・エデュケーション, 1999.
