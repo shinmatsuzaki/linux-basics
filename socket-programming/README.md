@@ -18,7 +18,7 @@
 |sendto()|メッセージの送信(コネクションレス型)|
 ----|---- 
 |select()|入出力の多重化|
-|poll()|入出力の多重化|
+|[poll()](https://linuxjm.osdn.jp/html/LDP_man-pages/man2/poll.2.html)|入出力の多重化|
 |epoll()|入出力の多重化|
 ----|---- 
 |setsockopt()|ソケットオプションの設定|
