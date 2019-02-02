@@ -1,5 +1,5 @@
 # linux-basics
-Linux / Linux Kernelの学習用レポジトリ
+Linux / LinuxKernelの学習用レポジトリ
 
 ### Table of Contents
  - #### [Systemcall API](syscall)
