@@ -64,7 +64,7 @@ int socket(int family, int type, int protocol)
 ```C
 #include <sys/socket.h>
 
-int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen
+int bind(int sockfd, struct sockaddr *myaddr, socklent_t addrlen)
 ```
 
 ### listen(2)
